@@ -6,23 +6,68 @@
 <div class="container">
     <form class="row g-3 m-4">
 		  <div class="row mb-3">
-		    <label for="userid" class="col-sm-2 col-form-label">	아이디</label>
+		    <label for="name" class="col-sm-2 col-form-label">	이름</label>
 		    <div class="col-auto">
-		      <input type="text" class="form-control" id="userid" name="userid" 
-		       value="${login.userid}"
+		      <input type="text" class="form-control" id="name" name="name" 
+		       value="${login.name}"
 		       disabled="disabled">
 		    </div>
 		  </div>
 		
 		  <div class="row mb-3">
-		    <label for="username" class="col-sm-2 col-form-label">이름</label>
+		    <label for="access_pw" class="col-sm-2 col-form-label">비밀번호</label>
 		    <div class="col-auto">
-		      <input type="text" class="form-control" name="username" 
-		      id="username"
-		       value="${login.username}"
+		      <input type="text" class="form-control" name="access_pw" 
+		      id="access_pw"
+		       value="${login.access_pw}"
 		       disabled="disabled">
 		    </div>
 		  </div>
+		  <div class="row mb-3">
+		    <label for="gender" class="col-sm-2 col-form-label">성별</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="gender" 
+		      id="gender"
+		       value="${login.gender}"
+		       disabled="disabled">
+		    </div>
+		  </div>
+		  <div class="row mb-3">
+		    <label for="height" class="col-sm-2 col-form-label">키</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="height" 
+		      id="height"
+		       value="${login.height}"
+		       disabled="disabled">
+		    </div>
+		  </div>
+		  <div class="row mb-3">
+		    <label for="weight" class="col-sm-2 col-form-label">몸무게</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="weight" 
+		      id="weight"
+		       value="${login.weight}"
+		       disabled="disabled">
+		    </div>
+		  </div>
+		  <div class="row mb-3">
+		    <label for="ponum" class="col-sm-2 col-form-label">이용권정보</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="ponum" 
+		      id="ponum"
+		       value="${login.ponum}"
+		       disabled="disabled">
+		    </div>
+		  </div>
+		  <div class="row mb-3">
+		    <label for="period" class="col-sm-2 col-form-label">기간</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="period" 
+		      id="period"
+		       value="${login.period}"
+		       disabled="disabled">
+		    </div>
+		  </div>		  		  		  		  		  
 		  <hr>
 		  <div class="row mb-3">
 		      <div class="col-auto">
