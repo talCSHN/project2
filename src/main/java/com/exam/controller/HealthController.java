@@ -27,8 +27,9 @@ public class HealthController {
 	@GetMapping("/health")
 	public String main(@RequestParam String category,ModelMap m) {
 		
-		List<HealthDTO> healthlist = healthService.HealthList(category);
-		m.addAttribute("healthlist", healthlist);
+		List<HealthDTO> healthList = healthService.HealthList(category);
+		m.addAttribute("healthList", healthList);
+		logger.info("logger:{}",healthList);
 		return "healthList";
 	}
 }
