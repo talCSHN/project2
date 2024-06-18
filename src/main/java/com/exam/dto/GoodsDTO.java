@@ -6,6 +6,7 @@ import org.apache.ibatis.type.Alias;
 public class GoodsDTO {
 
 	String ponum;
+	String poname;
 	String category;
 	String price;
 	String period;
@@ -14,8 +15,10 @@ public class GoodsDTO {
 	
 	public GoodsDTO() {}
 
-	public GoodsDTO(String ponum, String category, String price, String period, int pt_count, String image) {
+	public GoodsDTO(String ponum, String poname, String category, String price, String period, int pt_count,
+			String image) {
 		this.ponum = ponum;
+		this.poname = poname;
 		this.category = category;
 		this.price = price;
 		this.period = period;
@@ -29,6 +32,14 @@ public class GoodsDTO {
 
 	public void setPonum(String ponum) {
 		this.ponum = ponum;
+	}
+
+	public String getPoname() {
+		return poname;
+	}
+
+	public void setPoname(String poname) {
+		this.poname = poname;
 	}
 
 	public String getCategory() {
@@ -73,9 +84,11 @@ public class GoodsDTO {
 
 	@Override
 	public String toString() {
-		return "GoodsDTO [ponum=" + ponum + ", category=" + category + ", price=" + price + ", period=" + period
-				+ ", pt_count=" + pt_count + ", image=" + image + "]";
+		return "GoodsDTO [ponum=" + ponum + ", poname=" + poname + ", category=" + category + ", price=" + price
+				+ ", period=" + period + ", pt_count=" + pt_count + ", image=" + image + "]";
 	}
+	
+	
 	
 	
 	

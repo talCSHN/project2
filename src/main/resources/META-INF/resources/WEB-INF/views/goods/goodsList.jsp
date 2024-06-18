@@ -8,6 +8,7 @@
 	      <a href="goodsRetrieve?ponum=${dto.ponum}"> 
 			<img src="images/items/${dto.image}.gif" width="200">
 		  </a>
+		   <div class="mt-4 fs-6">${dto.poname}</div>
 	       <div class="mt-4 fs-6">${dto.price}</div>
 	       <div class="mt-2 fs-6">${dto.period}</div>
 	       <div class="mt-2 fs-6">${dto.pt_count}</div>

@@ -8,6 +8,7 @@
    <!-- 상품목록 -->
    <select id="goodsList" parameterType="string" resultType="GoodsDTO">
      select ponum,
+     		poname,
             category,
             price,
             period,
@@ -21,6 +22,7 @@
    <!-- 상품 자세히고비 -->
    <select id="goodsRetrieve" parameterType="string" resultType="GoodsDTO">
      select ponum,
+     		poname,
             category,
             price,
             period,
