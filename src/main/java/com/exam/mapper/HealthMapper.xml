@@ -3,10 +3,10 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.exam.mapper.GoodsMapper">
+<mapper namespace="com.exam.mapper.HealthMapper">
  
    <!-- 상품목록 -->
-   <select id="goodsList" parameterType="string" resultType="GoodsDTO">
+   <select id="HealthList" parameterType="string" resultType="HealthDTO">
      select ponum,
      		poname,
             category,
@@ -20,7 +20,7 @@
    
    
    <!-- 상품 자세히고비 -->
-   <select id="goodsRetrieve" parameterType="string" resultType="GoodsDTO">
+   <select id="HealthRetrieve" parameterType="string" resultType="HealthDTO">
      select ponum,
      		poname,
             category,

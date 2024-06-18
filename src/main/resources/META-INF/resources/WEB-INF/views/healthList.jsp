@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인홈페이지</title>
+<title>헬스이용권 구매 페이지</title>
 <style type="text/css">
     .App {
 	  text-align: center;

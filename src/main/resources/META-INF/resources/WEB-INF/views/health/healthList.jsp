@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="container">
   <div class="row">
-    <c:forEach var="dto" items="${goodsList}">
+    <c:forEach var="dto" items="${healthList}">
 	    <div class="col border border-dark m-4 w-80">
 	      <a href="goodsRetrieve?ponum=${dto.ponum}"> 
 			<img src="images/items/${dto.image}.gif" width="200">

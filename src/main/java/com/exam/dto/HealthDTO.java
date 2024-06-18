@@ -2,8 +2,8 @@ package com.exam.dto;
 
 import org.apache.ibatis.type.Alias;
 
-@Alias("GoodsDTO")
-public class GoodsDTO {
+@Alias("HealthDTO")
+public class HealthDTO {
 
 	String ponum;
 	String poname;
@@ -13,9 +13,9 @@ public class GoodsDTO {
 	String pt_count;
 	String image;
 	
-	public GoodsDTO() {}
+	public HealthDTO() {}
 
-	public GoodsDTO(String ponum, String poname, String category, String price, String period, String pt_count,
+	public HealthDTO(String ponum, String poname, String category, String price, String period, String pt_count,
 			String image) {
 		this.ponum = ponum;
 		this.poname = poname;
@@ -84,7 +84,7 @@ public class GoodsDTO {
 
 	@Override
 	public String toString() {
-		return "GoodsDTO [ponum=" + ponum + ", poname=" + poname + ", category=" + category + ", price=" + price
+		return "HealthDTO [ponum=" + ponum + ", poname=" + poname + ", category=" + category + ", price=" + price
 				+ ", period=" + period + ", pt_count=" + pt_count + ", image=" + image + "]";
 	}
 	
