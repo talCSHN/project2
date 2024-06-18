@@ -5,76 +5,78 @@ import org.apache.ibatis.type.Alias;
 @Alias("GoodsDTO")
 public class GoodsDTO {
 
-	String gCode;
-	String gCategory;
-	String gName;
-	String gContent;
-	int gPrice;
-	String gImage;
+	String ponum;
+	String category;
+	String price;
+	String period;
+	int pt_count;
+	String image;
 	
 	public GoodsDTO() {}
 
-	public GoodsDTO(String gCode, String gCategory, String gName, String gContent, int gPrice, String gImage) {
-		super();
-		this.gCode = gCode;
-		this.gCategory = gCategory;
-		this.gName = gName;
-		this.gContent = gContent;
-		this.gPrice = gPrice;
-		this.gImage = gImage;
+	public GoodsDTO(String ponum, String category, String price, String period, int pt_count, String image) {
+		this.ponum = ponum;
+		this.category = category;
+		this.price = price;
+		this.period = period;
+		this.pt_count = pt_count;
+		this.image = image;
 	}
 
-	public String getgCode() {
-		return gCode;
+	public String getPonum() {
+		return ponum;
 	}
 
-	public void setgCode(String gCode) {
-		this.gCode = gCode;
+	public void setPonum(String ponum) {
+		this.ponum = ponum;
 	}
 
-	public String getgCategory() {
-		return gCategory;
+	public String getCategory() {
+		return category;
 	}
 
-	public void setgCategory(String gCategory) {
-		this.gCategory = gCategory;
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
-	public String getgName() {
-		return gName;
+	public String getPrice() {
+		return price;
 	}
 
-	public void setgName(String gName) {
-		this.gName = gName;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
-	public String getgContent() {
-		return gContent;
+	public String getPeriod() {
+		return period;
 	}
 
-	public void setgContent(String gContent) {
-		this.gContent = gContent;
+	public void setPeriod(String period) {
+		this.period = period;
 	}
 
-	public int getgPrice() {
-		return gPrice;
+	public int getPt_count() {
+		return pt_count;
 	}
 
-	public void setgPrice(int gPrice) {
-		this.gPrice = gPrice;
+	public void setPt_count(int pt_count) {
+		this.pt_count = pt_count;
 	}
 
-	public String getgImage() {
-		return gImage;
+	public String getImage() {
+		return image;
 	}
 
-	public void setgImage(String gImage) {
-		this.gImage = gImage;
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	@Override
 	public String toString() {
-		return "GoodsDTO [gCode=" + gCode + ", gCategory=" + gCategory + ", gName=" + gName + ", gContent=" + gContent
-				+ ", gPrice=" + gPrice + ", gImage=" + gImage + "]";
+		return "GoodsDTO [ponum=" + ponum + ", category=" + category + ", price=" + price + ", period=" + period
+				+ ", pt_count=" + pt_count + ", image=" + image + "]";
 	}
+	
+	
+	
 }

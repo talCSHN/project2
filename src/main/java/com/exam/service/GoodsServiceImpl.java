@@ -17,13 +17,13 @@ public class GoodsServiceImpl implements GoodsService{
 	}
 
 	@Override
-	public List<GoodsDTO> goodsList(String gCategory) {
-		return goodsMapper.goodsList(gCategory);
+	public List<GoodsDTO> goodsList(String category) {
+		return goodsMapper.goodsList(category);
 	}
 
 	@Override
-	public GoodsDTO goodsRetrieve(String gCode) {
-		return goodsMapper.goodsRetrieve(gCode);
+	public GoodsDTO goodsRetrieve(String ponum) {
+		return goodsMapper.goodsRetrieve(ponum);
 	}
 
 }

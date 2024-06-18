@@ -9,6 +9,6 @@ import com.exam.dto.GoodsDTO;
 @Mapper
 public interface GoodsMapper {
 
-	public List<GoodsDTO> goodsList(String gCategory);
+	public List<GoodsDTO> goodsList(String category);
 	public GoodsDTO goodsRetrieve(String gCode);
 }
