@@ -17,18 +17,6 @@
 			$("#pwdcheck").text(mesg);			
 		}); // end 비번 확인
 		
-		
-		
-		// 회원가입 서브밋
-		/* $("form").on("submit", function(){
-			alert("form submit");
-			this.action="MemberAddServlet"; // MemberAddServlet의 맵핑값
-			this.method="post";		
-		}); */
-		
-	
-	
-		
 	}); // ready()
 	
 </script>
