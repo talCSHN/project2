@@ -9,26 +9,26 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.exam.dto.GoodsDTO;
-import com.exam.service.GoodsService;
+import com.exam.dto.HealthDTO;
+import com.exam.service.HealthService;
 
 @Controller
 public class HealthController {
 	
 	Logger logger = LoggerFactory.getLogger(getClass());
 	
-	GoodsService goodsService;
+	HealthService healthService;
 	
-	public HealthController(GoodsService goodsService) {
-		this.goodsService = goodsService;
+	public HealthController(HealthService healthService) {
+		this.healthService = healthService;
 	}
 
 
 	@GetMapping("/health")
 	public String main(@RequestParam String category,ModelMap m) {
 		
-		List<GoodsDTO> goodslist = goodsService.goodsList(category);
-		m.addAttribute("goodslist", goodslist);
+		List<HealthDTO> healthlist = healthService.HealthList(category);
+		m.addAttribute("healthlist", healthlist);
 		return "healthList";
 	}
 }
