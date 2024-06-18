@@ -8,12 +8,12 @@
                         <div class="navbar-collapse">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="main?category=health">health</a>
+                                    <a class="nav-link" href="health?category=health">health</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="main?category=P.T">P.T</a>
+                                    <a class="nav-link" href="health?category=P.T">P.T</a>
                                 </li>
                             </ul>
                               
