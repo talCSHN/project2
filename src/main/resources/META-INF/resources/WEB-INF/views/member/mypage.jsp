@@ -60,14 +60,23 @@
 		    </div>
 		  </div>
 		  <div class="row mb-3">
-		    <label for="period" class="col-sm-2 col-form-label">기간</label>
+		    <label for="period" class="col-sm-2 col-form-label">헬스 기간</label>
 		    <div class="col-auto">
 		      <input type="text" class="form-control" name="period" 
 		      id="period"
 		       value="${login.period}"
 		       disabled="disabled">
 		    </div>
-		  </div>		  		  		  		  		  
+		  </div>
+		  <div class="row mb-3">
+		    <label for="pt_count" class="col-sm-2 col-form-label">P.T 횟수</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="pt_count" 
+		      id="pt_count"
+		       value="${login.pt_count}"
+		       disabled="disabled">
+		    </div>
+		  </div>			  		  		  		  		  
 		  <hr>
 		  <div class="row mb-3">
 		      <div class="col-auto">

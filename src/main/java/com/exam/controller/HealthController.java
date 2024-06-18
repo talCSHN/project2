@@ -25,11 +25,23 @@ public class HealthController {
 
 
 	@GetMapping("/health")
-	public String main(@RequestParam String category,ModelMap m) {
+	public String health(@RequestParam String category,ModelMap m) {
 		
 		List<HealthDTO> healthList = healthService.HealthList(category);
 		m.addAttribute("healthList", healthList);
 		logger.info("logger:{}",healthList);
 		return "healthList";
 	}
+	
+	@GetMapping("/healthRetrieve")
+	public String healthRetrieve(@RequestParam String ponum,ModelMap m) {
+		
+		HealthDTO dto = healthService.HealthRetrieve(ponum);
+		m.addAttribute("healthRetrieve", dto);
+		logger.info("logger:{}",dto);
+		
+		return "healthRetrieve";
+	}
+	
+	
 }

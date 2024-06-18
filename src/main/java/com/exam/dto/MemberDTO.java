@@ -24,12 +24,14 @@ public class MemberDTO {
     String weight;
     String ponum;
     String period;
+    String pt_count;
 	
-	public MemberDTO() {}
+    public MemberDTO() {}
 
-	public MemberDTO(int member_id, String name, String gender, String access_pw, String post, String addr1,
-			String addr2, String phone1, String phone2, String phone3, String height, String weight, String ponum,
-			String period) {
+	public MemberDTO(int member_id, String name, String gender,
+			@Size(min = 4, message = "4글자 이상 입력해주세요.") String access_pw, String post, String addr1, String addr2,
+			String phone1, String phone2, String phone3, String height, String weight, String ponum, String period,
+			String pt_count) {
 		this.member_id = member_id;
 		this.name = name;
 		this.gender = gender;
@@ -44,6 +46,7 @@ public class MemberDTO {
 		this.weight = weight;
 		this.ponum = ponum;
 		this.period = period;
+		this.pt_count = pt_count;
 	}
 
 	public int getMember_id() {
@@ -158,13 +161,23 @@ public class MemberDTO {
 		this.period = period;
 	}
 
+	public String getPt_count() {
+		return pt_count;
+	}
+
+	public void setPt_count(String pt_count) {
+		this.pt_count = pt_count;
+	}
+
 	@Override
 	public String toString() {
 		return "MemberDTO [member_id=" + member_id + ", name=" + name + ", gender=" + gender + ", access_pw="
 				+ access_pw + ", post=" + post + ", addr1=" + addr1 + ", addr2=" + addr2 + ", phone1=" + phone1
 				+ ", phone2=" + phone2 + ", phone3=" + phone3 + ", height=" + height + ", weight=" + weight + ", ponum="
-				+ ponum + ", period=" + period + "]";
+				+ ponum + ", period=" + period + ", pt_count=" + pt_count + "]";
 	}
+	
+
 
 	
 	
