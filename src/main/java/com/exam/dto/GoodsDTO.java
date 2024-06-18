@@ -10,12 +10,12 @@ public class GoodsDTO {
 	String category;
 	String price;
 	String period;
-	int pt_count;
+	String pt_count;
 	String image;
 	
 	public GoodsDTO() {}
 
-	public GoodsDTO(String ponum, String poname, String category, String price, String period, int pt_count,
+	public GoodsDTO(String ponum, String poname, String category, String price, String period, String pt_count,
 			String image) {
 		this.ponum = ponum;
 		this.poname = poname;
@@ -66,11 +66,11 @@ public class GoodsDTO {
 		this.period = period;
 	}
 
-	public int getPt_count() {
+	public String getPt_count() {
 		return pt_count;
 	}
 
-	public void setPt_count(int pt_count) {
+	public void setPt_count(String pt_count) {
 		this.pt_count = pt_count;
 	}
 
@@ -87,6 +87,8 @@ public class GoodsDTO {
 		return "GoodsDTO [ponum=" + ponum + ", poname=" + poname + ", category=" + category + ", price=" + price
 				+ ", period=" + period + ", pt_count=" + pt_count + ", image=" + image + "]";
 	}
+	
+	
 	
 	
 	
