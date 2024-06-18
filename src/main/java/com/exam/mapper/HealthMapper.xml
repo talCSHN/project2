@@ -19,7 +19,7 @@
    </select>
    
    
-   <!-- 상품 자세히고비 -->
+   <!-- 상품 자세히보기 -->
    <select id="HealthRetrieve" parameterType="string" resultType="HealthDTO">
      select ponum,
      		poname,

@@ -9,7 +9,6 @@ import com.exam.dto.MemberDTO;
 @Mapper
 public interface MemberMapper {
 	
-	public MemberDTO idCheck(String name);
 	public int memberAdd(MemberDTO dto);
 	
 	public MemberDTO login(Map<String, String> map);
