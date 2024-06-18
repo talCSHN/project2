@@ -125,24 +125,6 @@
 			  class="form-control" id="phone3">
 			</div>
 		  </div>
-		  <div class="row mb-3">
-			  <label for="email1" class="col-sm-2 col-form-label">이메일:</label>
-		    <div class="col-auto">
-			  <input type="text" name="email1" 
-			         value="${login.email1}"
-			  class="form-control" id="email1">
-			</div>
-			<div class="col-auto">
-			  <label for="xxx" class="visually-hidden">@</label>
-			  <span>@</span>
-			</div>
-			<div class="col-auto">
-			  <label for="email2" class="visually-hidden">이메일2</label>
-			  <input type="text" name="email2" 
-			         value="${login.email2}"
-			   class="form-control" id="email2" placeholder="직접입력">
-			</div>
-		  </div>
 		  <div class="col-12">
 		    <button type="submit" class="btn btn-primary">update</button>
 		    <button type="reset" class="btn btn-primary">cancel</button>
