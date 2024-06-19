@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.exam.mapper.CartMapper">
+ 
+    <!-- 장바구니 저장 -->
+    <insert id="cartAdd" parameterType="CartDTO">
+       insert into cart (ponum, poname, price, period, pt_count, amount)
+       values (#{ponum}, #{poname}, #{price}, #{period}, #{pt_count}, #{amount})
+    </insert>
+   
+  
+   
+</mapper>
+
+
