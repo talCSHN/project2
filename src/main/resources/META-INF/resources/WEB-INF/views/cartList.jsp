@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원가입</title>
+<title>장바구니 목록</title>
 <style type="text/css">
     .App {
 	  text-align: center;
@@ -31,7 +31,7 @@
 	<jsp:include page="common/top.jsp" flush="true" /><br>
 	<jsp:include page="common/menu.jsp" flush="true" />
 	<hr>
-	<jsp:include page="member/memberForm.jsp" flush="true" />
+	<jsp:include page="cart/cartList.jsp" flush="true" />
  </div>
 </body>
 </html>

@@ -8,5 +8,6 @@ import com.exam.dto.CartDTO;
 public interface CartMapper {
 
 	public int cartAdd(CartDTO dto);
+	public CartDTO cartList(String userid);
 	
 }

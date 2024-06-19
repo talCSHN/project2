@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인홈페이지</title>
+<title>로그인</title>
 <style type="text/css">
     .App {
 	  text-align: center;
