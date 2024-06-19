@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!-- jQuery 설치 -->
 <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript">
+	
+	alert("로그인이 필요한 페이지입니다!!");
 	
 	$(document).ready(function(){
 	
