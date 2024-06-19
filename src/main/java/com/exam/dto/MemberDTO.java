@@ -11,7 +11,6 @@ public class MemberDTO {
 
 	@Size(min = 4, message = "4글자 이상 입력해주세요.")
 	String passwd;
-    
 	String username;
     String gender;   
     String height;

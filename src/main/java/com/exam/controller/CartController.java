@@ -31,6 +31,7 @@ public class CartController {
 		HealthDTO healthDTO =(HealthDTO)m.getAttribute("healthRetrieve");
 		
 		logger.info("logger:{}",healthDTO);
+		logger.info("logger:{}",memberDTO);
 		
 		String userid = memberDTO.getUserid();
 		String poname = healthDTO.getPoname();
@@ -49,9 +50,7 @@ public class CartController {
 		
 		int n = cartService.cartAdd(cartDTO);
 		
-		
-		
-		return "cartAddSuccess";
+		return "main";
 	}
 	
 	
