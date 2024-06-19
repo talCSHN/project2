@@ -7,8 +7,8 @@
  
     <!-- 장바구니 저장 -->
     <insert id="cartAdd" parameterType="CartDTO">
-       insert into cart (ponum, poname, price, period, pt_count, amount)
-       values (#{ponum}, #{poname}, #{price}, #{period}, #{pt_count}, #{amount})
+       insert into cart (ponum, poname, price, period, pt_count)
+       values (#{ponum}, #{poname}, #{price}, #{period}, #{pt_count})
     </insert>
    
   

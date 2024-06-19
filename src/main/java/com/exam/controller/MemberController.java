@@ -55,9 +55,9 @@ public class MemberController {
 		// 세션에 저장된 MemberDTO 얻기
 		MemberDTO dto = (MemberDTO)m.getAttribute("login");
 		logger.info("loggerLmypage:{}", dto);
-		String name = dto.getName();
+		String userid = dto.getUserid();
 		
-		MemberDTO searchDTO = memberService.mypage(name);
+		MemberDTO searchDTO = memberService.mypage(userid);
 		m.addAttribute("login", searchDTO);
 		
 		return "mypage";

@@ -47,14 +47,7 @@ ${healthRetrieve}
 		    <h6 class="card-text">
 		      <span class="fw-bold ">P.T 횟수:</span>
 		        ${healthRetrieve.pt_count}</h6>		        		      
-			 <h6 class="card-text">
-			 
-			      <span class="fw-bold ">수량:</span>
-			      <input type="text" name="amount" value="1" id="amount">
-			      <img src="images/up.PNG" id="up"> 
-			      <img src="images/down.PNG" id="down">
-		     
-		      </h6>
+		    
 		    <a href="#" class="btn btn-primary mt-3">구매</a>
 		    <a href="cartAdd" class="btn btn-primary mt-3">장바구니</a>
 		  </div>
