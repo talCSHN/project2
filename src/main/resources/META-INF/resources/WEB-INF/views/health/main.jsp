@@ -3,6 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="container">
   <div class="row">
-		<img src="images/items/gymer-1126999_1280.jpg" width="200">
+		<img src="images/items/main.png" width="200">
   </div>
 </div>
