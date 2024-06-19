@@ -18,7 +18,7 @@
 		    <label for="passwd" class="col-sm-2 col-form-label">비밀번호</label>
 		    <div class="col-auto">
 		      <input type="text" class="form-control" name="passwd" 
-		      id="access_pw"
+		      id="passwd"
 		       value="${login.passwd}"
 		       disabled="disabled">
 		    </div>

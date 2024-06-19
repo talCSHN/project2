@@ -8,19 +8,9 @@
 	
 	$(document).ready(function(){
 	
-		$("#up").on("click", function(){
+		$("#cart").on("click", function(){
 			
-			 var amount = Number.parseInt(  $("#amount").val() );
-			 $("#amount").val(amount+1);
-		});
-
-		$("#down").on("click", function(){
-			var amount = Number.parseInt(  $("#amount").val() );
-			if(amount==1){
-				$("#amount").val(1);
-			}else{
-				$("#amount").val(gAmount-1);
-			}
+			alert("장바구니에 저장 되었습니다.")
 		});
 		
 	});// ready()
@@ -49,7 +39,7 @@ ${healthRetrieve}
 		        ${healthRetrieve.pt_count}</h6>		        		      
 		    
 		    <a href="#" class="btn btn-primary mt-3">구매</a>
-		    <a href="cartAdd" class="btn btn-primary mt-3">장바구니</a>
+		    <a href="cartAdd" class="btn btn-primary mt-3" id="cart">장바구니</a>
 		  </div>
 		</div>
 	   

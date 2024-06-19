@@ -53,7 +53,18 @@ public class CartController {
 		return "main";
 	}
 	
-	
+	@GetMapping("/cartList")
+	public String cartList(ModelMap m) {
+		
+		MemberDTO memberDTO = (MemberDTO)m.getAttribute("login");
+		String userid = memberDTO.getUserid();
+		
+		CartDTO searchDTO = cartService.cartList(userid);
+		m.addAttribute("cartList", searchDTO);
+		
+		
+		return "cartList";
+	}
 	
 	
 }

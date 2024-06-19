@@ -11,7 +11,12 @@
        values (#{userid}, #{ponum}, #{poname}, #{price}, #{period}, #{pt_count})
     </insert>
    
-  
+  	<!-- cartList 목록 보기 -->
+	<select id="cartList" parameterType="string" resultType="CartDTO">
+		select userid, num,ponum, poname, price, period, pt_count
+		from cart
+		where userid=#{userid}
+	</select>
    
 </mapper>
 
