@@ -5,8 +5,6 @@
 <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 	
-	alert("로그인이 필요한 페이지입니다!!");
-	
 	$(document).ready(function(){
 	
 		// 회원가입 서브밋
@@ -25,20 +23,19 @@
     	<div>${errorMessage}</div>
 		  </div>
 		  <div class="row mb-3">
-		    <label for="name" class="col-sm-2 col-form-label">이름</label>
+		    <label for="userid" class="col-sm-2 col-form-label">아이디</label>
 		    <div class="col-auto">
-		      <input type="text" class="form-control" id="name" name="name">
+		      <input type="text" class="form-control" id="userid" name="userid">
 		    </div>
 		  </div>
 		 <div class="row mb-3">
-		    <label for="access_pw" class="col-sm-2 col-form-label">출입비밀번호</label>
+		    <label for="passwd" class="col-sm-2 col-form-label">비밀번호</label>
 		    <div class="col-auto">
-		      <input type="password" class="form-control" name="access_pw" id="access_pw">
+		      <input type="password" class="form-control" name="passwd" id="passwd">
 		    </div>
 		  </div>
 		  <div class="col-12">
 		    <button type="submit" class="btn btn-primary">로그인</button>
-		    <button type="reset" class="btn btn-primary">취소</button>
 		  </div>
  </form>
 </div> 

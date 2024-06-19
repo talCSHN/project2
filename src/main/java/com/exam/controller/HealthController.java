@@ -15,7 +15,7 @@ import com.exam.dto.MemberDTO;
 import com.exam.service.HealthService;
 
 @Controller
-@SessionAttributes(names = {"login"})
+@SessionAttributes(names = {"login","healthRetrieve"})
 public class HealthController {
 	
 	Logger logger = LoggerFactory.getLogger(getClass());

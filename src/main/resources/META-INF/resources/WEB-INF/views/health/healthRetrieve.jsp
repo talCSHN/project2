@@ -10,16 +10,16 @@
 	
 		$("#up").on("click", function(){
 			
-			 var gAmount = Number.parseInt(  $("#gAmount").val() );
-			 $("#gAmount").val(gAmount+1);
+			 var amount = Number.parseInt(  $("#amount").val() );
+			 $("#amount").val(amount+1);
 		});
 
 		$("#down").on("click", function(){
-			var gAmount = Number.parseInt(  $("#gAmount").val() );
-			if(gAmount==1){
-				$("#gAmount").val(1);
+			var amount = Number.parseInt(  $("#amount").val() );
+			if(amount==1){
+				$("#amount").val(1);
 			}else{
-				$("#gAmount").val(gAmount-1);
+				$("#amount").val(gAmount-1);
 			}
 		});
 		
@@ -47,16 +47,9 @@ ${healthRetrieve}
 		    <h6 class="card-text">
 		      <span class="fw-bold ">P.T 횟수:</span>
 		        ${healthRetrieve.pt_count}</h6>		        		      
-			 <h6 class="card-text">
-			 
-			      <span class="fw-bold ">수량:</span>
-			      <input type="text" name="gAmount" value="1" id="gAmount">
-			      <img src="images/up.PNG" id="up"> 
-			      <img src="images/down.PNG" id="down">
-		     
-		      </h6>
+		    
 		    <a href="#" class="btn btn-primary mt-3">구매</a>
-		    <a href="#" class="btn btn-primary mt-3">장바구니</a>
+		    <a href="cartAdd" class="btn btn-primary mt-3">장바구니</a>
 		  </div>
 		</div>
 	   

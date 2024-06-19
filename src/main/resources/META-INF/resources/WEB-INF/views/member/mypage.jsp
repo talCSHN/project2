@@ -6,20 +6,29 @@
 <div class="container">
     <form class="row g-3 m-4">
 		  <div class="row mb-3">
-		    <label for="name" class="col-sm-2 col-form-label">	이름</label>
+		    <label for="userid" class="col-sm-2 col-form-label">	아이디</label>
 		    <div class="col-auto">
-		      <input type="text" class="form-control" id="name" name="name" 
-		       value="${login.name}"
+		      <input type="text" class="form-control" id="userid" name="userid" 
+		       value="${login.userid}"
 		       disabled="disabled">
 		    </div>
 		  </div>
 		
 		  <div class="row mb-3">
-		    <label for="access_pw" class="col-sm-2 col-form-label">비밀번호</label>
+		    <label for="passwd" class="col-sm-2 col-form-label">비밀번호</label>
 		    <div class="col-auto">
-		      <input type="text" class="form-control" name="access_pw" 
+		      <input type="text" class="form-control" name="passwd" 
 		      id="access_pw"
-		       value="${login.access_pw}"
+		       value="${login.passwd}"
+		       disabled="disabled">
+		    </div>
+		  </div>
+		  <div class="row mb-3">
+		    <label for="username" class="col-sm-2 col-form-label">이름</label>
+		    <div class="col-auto">
+		      <input type="text" class="form-control" name="username" 
+		      id="ponum"
+		       value="${login.username}"
 		       disabled="disabled">
 		    </div>
 		  </div>
@@ -47,33 +56,6 @@
 		      <input type="text" class="form-control" name="weight" 
 		      id="weight"
 		       value="${login.weight}"
-		       disabled="disabled">
-		    </div>
-		  </div>
-		  <div class="row mb-3">
-		    <label for="ponum" class="col-sm-2 col-form-label">이용권정보</label>
-		    <div class="col-auto">
-		      <input type="text" class="form-control" name="ponum" 
-		      id="ponum"
-		       value="${login.ponum}"
-		       disabled="disabled">
-		    </div>
-		  </div>
-		  <div class="row mb-3">
-		    <label for="period" class="col-sm-2 col-form-label">헬스 기간</label>
-		    <div class="col-auto">
-		      <input type="text" class="form-control" name="period" 
-		      id="period"
-		       value="${login.period}"
-		       disabled="disabled">
-		    </div>
-		  </div>
-		  <div class="row mb-3">
-		    <label for="pt_count" class="col-sm-2 col-form-label">P.T 횟수</label>
-		    <div class="col-auto">
-		      <input type="text" class="form-control" name="pt_count" 
-		      id="pt_count"
-		       value="${login.pt_count}"
 		       disabled="disabled">
 		    </div>
 		  </div>			  		  		  		  		  
@@ -133,10 +115,6 @@
 			         value="${login.phone3}"
 			  class="form-control" id="phone3">
 			</div>
-		  </div>
-		  <div class="col-12">
-		    <button type="submit" class="btn btn-primary">update</button>
-		    <button type="reset" class="btn btn-primary">cancel</button>
 		  </div>
  </form>
 	
