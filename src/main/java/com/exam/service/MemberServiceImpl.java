@@ -22,14 +22,10 @@ public class MemberServiceImpl implements MemberService{
 		return memberMapper.memberAdd(dto);
 	}
 
-	@Override
-	public MemberDTO login(Map<String, String> map) {
-		return memberMapper.login(map);
-	}
 
 	@Override
-	public MemberDTO mypage(String userid) {
-		return memberMapper.mypage(userid);
+	public MemberDTO findById(String userid) {
+		return memberMapper.findById(userid);
 	}
 
 }

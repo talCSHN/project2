@@ -1,5 +1,7 @@
 package com.exam.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.exam.dto.CartDTO;
@@ -20,8 +22,14 @@ public class CartServiceImpl implements CartService {
 	}
 
 	@Override
-	public CartDTO cartList(String userid) {
+	public List<CartDTO> cartList(String userid) {
 		return cartMapper.cartList(userid);
 	}
 
+	@Override
+	public int cartDelete(int num) {
+		return cartMapper.cartDelete(num);
+	}
+
+	
 }

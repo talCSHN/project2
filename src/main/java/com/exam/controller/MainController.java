@@ -10,15 +10,9 @@ import com.exam.service.HealthService;
 public class MainController {
 	
 	Logger logger = LoggerFactory.getLogger(getClass());
-	
-	HealthService goodsService;
-	
-	public MainController(HealthService goodsService) {
-		this.goodsService = goodsService;
-	}
 
 
-	@GetMapping("/main")
+	@GetMapping(value={"/main"})
 	public String main() {
 		
 		return "main";

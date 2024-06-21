@@ -1,8 +1,12 @@
 package com.exam.controller;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +20,7 @@ import com.exam.dto.MemberDTO;
 import com.exam.service.CartService;
 
 @Controller
-@SessionAttributes(names = {"login","healthRetrieve"})
+@SessionAttributes(names = {"healthRetrieve","cartList"})
 public class CartController {
 	
 	Logger logger = LoggerFactory.getLogger(getClass());
@@ -27,7 +31,9 @@ public class CartController {
 	@GetMapping("/cartAdd")
 	public String cartAdd(ModelMap m) {
 		
-		MemberDTO memberDTO = (MemberDTO)m.getAttribute("login");
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		
+		MemberDTO memberDTO = (MemberDTO)auth.getPrincipal();
 		HealthDTO healthDTO =(HealthDTO)m.getAttribute("healthRetrieve");
 		
 		logger.info("logger:{}",healthDTO);
@@ -53,16 +59,38 @@ public class CartController {
 		return "main";
 	}
 	
+	@PostMapping("/cartDelete")
+	public String cartDelete(@RequestParam("num") int num, ModelMap m) {
+		
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		
+		MemberDTO memberDTO = (MemberDTO)auth.getPrincipal();
+		
+		//CartDTO cartDTO = new CartDTO();
+		//int del = cartDTO.getNum();
+		
+		logger.info("Deleting cart item with num: {}", num);
+		//int delete = 
+		 
+		cartService.cartDelete(num);
+		
+		//m.addAttribute("cartDelete", delete);
+		
+		return "redirect:cartList";
+	}
+	
 	@GetMapping("/cartList")
 	public String cartList(ModelMap m) {
 		
-		MemberDTO memberDTO = (MemberDTO)m.getAttribute("login");
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		
+		MemberDTO memberDTO = (MemberDTO)auth.getPrincipal();
 		String userid = memberDTO.getUserid();
 		
-		CartDTO searchDTO = cartService.cartList(userid);
+		List<CartDTO> searchDTO = cartService.cartList(userid);
 		m.addAttribute("cartList", searchDTO);
 		
-		
+		logger.info("cartList:{}", searchDTO);
 		return "cartList";
 	}
 	

@@ -4,10 +4,9 @@ import java.time.LocalDate;
 
 import org.apache.ibatis.type.Alias;
 
-@Alias("CartDTO")
-public class CartDTO {
+@Alias("BuyGoodsDTO")
+public class BuyGoodsDTO {
 
-	int num;
 	String userid;
 	String ponum;
 	String poname;
@@ -16,11 +15,10 @@ public class CartDTO {
 	String pt_count;
 	LocalDate cart_date;
 	
-	public CartDTO() {}
+	public BuyGoodsDTO() {}
 
-	public CartDTO(int num, String userid, String ponum, String poname, String price, String period, String pt_count,
+	public BuyGoodsDTO(String userid, String ponum, String poname, String price, String period, String pt_count,
 			LocalDate cart_date) {
-		this.num = num;
 		this.userid = userid;
 		this.ponum = ponum;
 		this.poname = poname;
@@ -28,14 +26,6 @@ public class CartDTO {
 		this.period = period;
 		this.pt_count = pt_count;
 		this.cart_date = cart_date;
-	}
-
-	public int getNum() {
-		return num;
-	}
-
-	public void setNum(int num) {
-		this.num = num;
 	}
 
 	public String getUserid() {
@@ -96,9 +86,11 @@ public class CartDTO {
 
 	@Override
 	public String toString() {
-		return "CartDTO [num=" + num + ", userid=" + userid + ", ponum=" + ponum + ", poname=" + poname + ", price="
-				+ price + ", period=" + period + ", pt_count=" + pt_count + ", cart_date=" + cart_date + "]";
+		return "BuyGoodsDTO [userid=" + userid + ", ponum=" + ponum + ", poname=" + poname + ", price=" + price
+				+ ", period=" + period + ", pt_count=" + pt_count + ", cart_date=" + cart_date + "]";
 	}
+	
+	
 	
 
 	

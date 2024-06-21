@@ -15,7 +15,6 @@
 		
 	});// ready()
 </script>
-${healthRetrieve}
 <div class="container">
 	<form class="row g-3 m-4">
 	  <div class="row">    
@@ -38,7 +37,6 @@ ${healthRetrieve}
 		      <span class="fw-bold ">P.T 횟수:</span>
 		        ${healthRetrieve.pt_count}</h6>		        		      
 		    
-		    <a href="#" class="btn btn-primary mt-3">구매</a>
 		    <a href="cartAdd" class="btn btn-primary mt-3" id="cart">장바구니</a>
 		  </div>
 		</div>
